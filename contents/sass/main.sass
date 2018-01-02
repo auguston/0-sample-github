@@ -1,0 +1,88 @@
+@import helper/variables
+@import helper/media
+@import helper/helper
+
+@import url("//fonts.googleapis.com/earlyaccess/notosanstc.css")
+
+$main: #59C2FF
+
+*, *::before, *::after
+  box-sizing: border-box
+
+body
+  background: #f5fbff
+  letter-spacing: 1.5px
+  font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei", "MingLiU", "sans-serif", serif
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+// 左側導覽列
+.navbar-wrap
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  width: 250px
+  background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
+  color: rgba(#FFF, .87)
+
+  // 大頭照
+  .avatar
+    padding: 1rem
+    img
+      margin: 0 auto
+      max-width: 120px
+      border: 1px solid #1e3c72
+      border-radius: 50%
+    figcaption
+      line-height: 2
+      text-align: center
+      font-size: 2rem
+      font-weight: 200
+  
+  // ga pageviews
+  .analytics
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 1rem 0
+    font-weight: 200
+    .views, .email
+      display: flex
+      flex-direction: column
+      align-items: center
+    a
+      color: inherit
+    .svg-inline--fa
+      font-size: 2.5rem
+  
+  // nav
+  .navbar
+    padding: 1rem 0
+    a
+      display: block
+      padding: 1rem
+      background: rgba(#000, .1)
+      text-transform: capitalize
+      text-decoration: none
+      color: rgba(#FFF, .87)
+      transition: $transition-default
+      &:hover
+        background: rgba(#FFF, .1)
+    .svg-inline--fa
+      margin-right: 1rem
+      font-size: $px20
+    .divider
+      padding: 1rem
+      font-size: $px12
+      font-weight: 200
+      ~ .divider
+        margin-top: 1rem
+
+.contents-wrap
+  position: absolute 0
+  margin-left: 250px
+  padding: 1rem
