@@ -33,6 +33,7 @@ html
       link(rel="stylesheet", href="contents/css/main.css")
     
     script(defer, src="https://use.fontawesome.com/releases/v5.0.2/js/all.js")
+    script(src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js")
 
     = "\n"
     = "\n"
@@ -132,11 +133,41 @@ html
       //- content
       main.contents-wrap
         .chapter-title
-          h1 Vue-Search-Sample
-          p 用Vue.js的filter功能，製作的search功能範例。
-          p Vue.js use Filter to build search function.
-        .chapter-subtitle
-          h2 搜尋功能示範
+          h1 功能名稱功能名稱功能名稱
+          p 功能中文簡述功能中文簡述功能中文簡述功能中文簡述
+          p This plugin English info. This plugin English info. This plugin English info.
+        
+        .contents
+          h2 標題2標題2標題2標題2標題2標題2標題2
+          p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
+          p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
+          p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
+
+          h2 標題2標題2標題2標題2標題2標題2標題2
+          p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
+          h3 標題3標題3標題3標題3標題3標題3
+          p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
+          p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
+
+          h2 code範例
+          pre.prettyprint
+            code.language-js
+              | &lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"></>
+              | &lt;script src="contents/js/main.min.js"></script>
+              | 
+              | // use the plugin
+              | &lt;script>
+              |   const config = {
+              |     duration: 300,
+              |     delay: 400
+              |   };
+              |   Waves.init(config);
+              |   Waves.attach('.js-nav-wave a', ['waves-light']);
+              | &lt;/script>
+          
+          h2 加入影音
+          .iframe-wrap
+            iframe(src="https://www.youtube.com/embed/YygVVvuIWm4", frameborder="0", allowfullscreen)
 
     //- js
     script(src="https://code.jquery.com/jquery-3.1.1.min.js")

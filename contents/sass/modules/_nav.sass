@@ -10,7 +10,7 @@
   overflow-y: auto
   background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
   color: rgba(#FFF, .87)
-
+  box-shadow: $z1
   .burger-button
     position: fixed
     right: $px6
@@ -92,17 +92,20 @@
 
 +m-768
   .navbar-wrap
-    position: relative
     overflow-y: visible
     width: 100%
     background: none
-
+    box-shadow: none
+    pointer-events: none
     .mobile-top
       background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
       transform: translateY(-100%)
       transition: $transition-default
+      .burger-button
+        pointer-events: auto
       &.active
         transform: translateY(0)
+        pointer-events: auto
         .burger-button
           margin-top: $px22
           span:first-of-type
@@ -124,6 +127,7 @@
       padding-bottom: 0
       transform: translateY(56px)
       transition: $transition-default
+      pointer-events: auto
       &.active
         transform: translateY(0)
       .main-links

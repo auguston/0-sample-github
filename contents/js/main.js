@@ -47,3 +47,8 @@ $(function() {
   s_public.socialLink();
   s_public.gaViews();
 });
+$(window).on({
+  load() {
+    PR.prettyPrint();
+  }
+});
