@@ -150,20 +150,21 @@ html
           p 中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明中文說明
 
           h2 code範例
-          pre.prettyprint
-            code.language-js
-              | &lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"></>
-              | &lt;script src="contents/js/main.min.js"></script>
-              | 
-              | // use the plugin
-              | &lt;script>
-              |   const config = {
-              |     duration: 300,
-              |     delay: 400
-              |   };
-              |   Waves.init(config);
-              |   Waves.attach('.js-nav-wave a', ['waves-light']);
-              | &lt;/script>
+          .code-wrap
+            pre.prettyprint
+              code.language-js
+                | &lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"></>
+                | &lt;script src="contents/js/main.min.js"></script>
+                | 
+                | // use the plugin
+                | &lt;script>
+                |   const config = {
+                |     duration: 300,
+                |     delay: 400
+                |   };
+                |   Waves.init(config);
+                |   Waves.attach('.js-nav-wave a', ['waves-light']);
+                | &lt;/script>
           
           h2 加入影音
           .iframe-wrap

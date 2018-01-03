@@ -37,6 +37,8 @@ img
   z-index: 1
   margin-left: 250px
   margin-bottom: 60px
+  h1, h2, h3, p, .iframe-wrap, .code-wrap
+    padding: 0 2rem
   h1
     margin-bottom: 1rem
     line-height: 2
@@ -61,13 +63,16 @@ img
   .contents-wrap
     position: relative
     margin-left: 0
-
-.chapter-title, .contents
-  padding: 2rem
+    h1, h2, h3, p
+      padding: 0 1rem
+      line-height: 1.25
+    .iframe-wrap, .code-wrap
+      padding: 1rem 0
 
 .chapter-title
   position: relative
   margin-bottom: $px40
+  padding: 2rem
   background: linear-gradient(to top, #414345, #232526)
   text-align: center
   color: rgba(#FFF, .87)
@@ -83,10 +88,6 @@ img
     border-width: 30px 30px 0 30px
     border-color: #414345 transparent transparent transparent
     transform: translateX(-50%)
-
-+m-768
-  .contents
-    padding: 2rem 1rem
 
 pre
   &.prettyprint
