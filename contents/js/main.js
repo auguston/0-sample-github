@@ -39,6 +39,9 @@ const s_public = {
         $('.js-pageviews').text(d);
       }
     });
+  },
+  copyright() {
+    $('.js-copyright .year').text(new Date().getFullYear() + ' Auguston All Rights Reserved.');
   }
 };
 
@@ -46,6 +49,7 @@ $(function() {
   s_public.wave();
   s_public.socialLink();
   s_public.gaViews();
+  s_public.copyright();
 });
 $(window).on({
   load() {

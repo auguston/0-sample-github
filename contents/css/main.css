@@ -9,7 +9,7 @@
 /*	使用方式 .iframe-wrap iframe(src="https://www.youtube.com/embed/YygVVvuIWm4", frameborder="0", allowfullscreen) */
 *, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html, body, .container { width: 100%; }
+html, body { width: 100%; overflow-x: hidden; }
 
 body { background: #f5fbff; letter-spacing: 1.5px; font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei", "MingLiU", "sans-serif", serif; color: #414345; }
 
@@ -76,7 +76,7 @@ img { display: block; max-width: 100%; height: auto; }
   .navbar-wrap .navbar .social-links a { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; border-radius: 0; text-align: center; }
   .navbar-wrap .navbar .divider { display: none; } }
 
-.contents-wrap { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; margin-left: 250px; margin-bottom: 100px; width: 100%; }
+.contents-wrap { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; margin-left: 250px; }
 
 .contents-wrap h1, .contents-wrap h2, .contents-wrap h3, .contents-wrap p, .contents-wrap .iframe-wrap, .contents-wrap .code-wrap { padding: 0 32px; padding: 0 2rem; }
 
@@ -123,5 +123,11 @@ pre .atn { color: #bdb76b; font-weight: bold; }
 pre .atv { color: #ffa0a0; }
 
 pre .dec { color: #98fb98; }
+
+.footer-wrap { margin-top: 32px; margin-top: 2rem; margin-bottom: 16px; margin-bottom: 1rem; }
+
+.footer-wrap h6 { text-align: center; font-size: 12px; font-size: 0.75rem; }
+
+@media screen and (max-width: 768px) { .footer-wrap { margin-bottom: 120px; } }
 
 /*# sourceMappingURL=main.css.map */
