@@ -4,7 +4,7 @@
 
 @import url("//fonts.googleapis.com/earlyaccess/notosanstc.css")
 
-$main: #59C2FF
+$main: #2a5298
 
 *, *::before, *::after
   box-sizing: border-box
@@ -25,9 +25,23 @@ img
   top: 0
   left: 0
   bottom: 0
+  z-index: 998
   width: 250px
+  height: 100%
+  overflow-y: auto
   background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
   color: rgba(#FFF, .87)
+
+  .burger-button
+    display: none
+    position: fixed
+    right: 260px
+    span
+      display: block
+      margin: $px6 0
+      width: $px42
+      height: 3px
+      background: $main
 
   // 大頭照
   .avatar
@@ -65,13 +79,14 @@ img
     a
       display: block
       padding: 1rem
-      background: rgba(#000, .1)
+      overflow: hidden
       text-transform: capitalize
       text-decoration: none
       color: rgba(#FFF, .87)
       transition: $transition-default
       &:hover
-        background: rgba(#FFF, .1)
+        background: rgba(#000, .2)
+        color: #FFF
     .svg-inline--fa
       margin-right: 1rem
       font-size: $px20
@@ -79,10 +94,25 @@ img
       padding: 1rem
       font-size: $px12
       font-weight: 200
+      color: rgba(#FFF, .54)
       ~ .divider
-        margin-top: 1rem
+        margin-top: 2rem
 
++m-768
+  .navbar-wrap
+    left: initial
+    right: 0
+
+    .burger-button
+      display: block
+
+// 內容
 .contents-wrap
   position: absolute 0
+  z-index: 1
   margin-left: 250px
   padding: 1rem
+
++m-768
+  .contents-wrap
+    margin-left: 0

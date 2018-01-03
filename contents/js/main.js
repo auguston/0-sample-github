@@ -1,4 +1,13 @@
 const s_public = {
+  wave() {
+    // nav
+    const config = {
+      duration: 300,
+      delay: 400
+    };
+    Waves.init(config);
+    Waves.attach('.navbar a', ['waves-light']);
+  },
   socialLink() {
     if($('.js-social-share').length > 0) {
       const href = $('[rel="canonical"]').attr('href'),
@@ -24,6 +33,7 @@ const s_public = {
 };
 
 $(function() {
+  s_public.wave();
   s_public.socialLink();
   s_public.gaViews();
 });

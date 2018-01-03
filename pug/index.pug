@@ -29,6 +29,7 @@ html
     //- 要額外引用的css，用block prepend 或 append link引用
     block link-tags
       link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+      link(rel="stylesheet", href="contents/vendor/waves.min.css")
       link(rel="stylesheet", href="contents/css/main.css")
     
     script(defer, src="https://use.fontawesome.com/releases/v5.0.2/js/all.js")
@@ -75,7 +76,15 @@ html
   body
 
     .container
+
+      //- nav
       aside.navbar-wrap
+
+        //- burger button
+        .burger-button
+          span
+          span
+          span
 
         //- 大頭照
         figure.avatar
@@ -115,6 +124,7 @@ html
             .fab.fa-twitter-square
             | twitter
       
+      //- content
       main.contents-wrap
         .chapter-title
           h1 Vue-Search-Sample
@@ -125,4 +135,5 @@ html
 
     //- js
     script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+    script(src="contents/vendor/waves.min.js")
     script(src="contents/js/main.min.js")
