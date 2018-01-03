@@ -16,6 +16,16 @@ const s_public = {
       $('.js-facebook').attr('href', `https://www.facebook.com/share.php?u=${ href }`);
       $('.js-google').attr('href', `https://plus.google.com/share?url=${ href }`);
       $('.js-twitter').attr('href', `https://twitter.com/share?text=${ title }&url=${ href }`);
+
+      // when .js-open-social click, toggle .social-links
+      $('.js-open-social').on('click', e => {
+        e.preventDefault();
+        $('.navbar, .toggle-share').toggleClass('active');
+      });
+
+      $('.js-trigger-burger').on('click', e => {
+        $('.mobile-top').toggleClass('active');
+      });
     }
   },
   gaViews() {

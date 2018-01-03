@@ -41,13 +41,15 @@ img
 
   .burger-button
     position: fixed
-    right: 260px
+    right: $px6
     span
+      position: relative
       display: block
       margin: $px6 0
-      width: $px42
+      width: $px36
       height: 3px
       background: $main
+      transition: $transition-default
 
   // 大頭照
   .avatar
@@ -118,6 +120,65 @@ img
 
 +m-768
   .navbar-wrap
+    position: relative
+    overflow-y: visible
+    width: 100%
+    background: none
+
+    .mobile-top
+      background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
+      transform: translateY(-100%)
+      transition: $transition-default
+      &.active
+        transform: translateY(0)
+        .burger-button
+          margin-top: $px22
+          span:first-of-type
+            transform: rotate(45deg)
+          span:nth-of-type(2)
+            top: -$px2
+            right: $px12
+            transform: rotate(90deg)
+          span:last-of-type
+            top: -$px18
+            right: $px24
+            transform: rotate(-45deg)
+    
+    .navbar
+      position: fixed
+      right: 0
+      left: 0
+      bottom: 0
+      padding-bottom: 0
+      transform: translateY(56px)
+      transition: $transition-default
+      &.active
+        transform: translateY(0)
+      .main-links
+        display: flex
+        justify-content: space-around
+        background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
+        a
+          flex: 1
+          padding: .5rem 0
+          text-align: center
+          &.active
+            background: #414345
+        span
+          display: none
+        .svg-inline--fa
+          margin-right: 0
+          font-size: $px30
+      .social-links
+        padding: 0
+        background: #414345
+        a
+          flex: 1
+          border-radius: 0
+          text-align: center
+
+      .divider
+        display: none
 
 // 內容
 .contents-wrap

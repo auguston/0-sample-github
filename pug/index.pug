@@ -80,25 +80,28 @@ html
       //- nav
       aside.navbar-wrap
 
-        //- burger button
-        .burger-button.hide-desktop-up
-          span
-          span
-          span
+        //- 手機時移到上方
+        .mobile-top
 
-        //- 大頭照
-        figure.avatar
-          img(src="contents/img/avatar.jpg", alt="Auguston")
-          figcaption Auguston
-        
-        //- ga pageviews
-        .analytics
-          .views
-            i.fas.fa-eye
-            span.js-pageviews
-          a.email(href="mailto:augustus0818@gmail.com", title="augustus0818@gmail.com")
-            i.fas.fa-envelope
-            span augustus
+          //- 大頭照
+          figure.avatar
+            img(src="contents/img/avatar.jpg", alt="Auguston")
+            figcaption Auguston
+          
+          //- ga pageviews
+          .analytics
+            .views
+              i.fas.fa-eye
+              span.js-pageviews
+            a.email(href="mailto:augustus0818@gmail.com", title="augustus0818@gmail.com")
+              i.fas.fa-envelope
+              span augustus
+          
+          //- burger button
+          .burger-button.js-trigger-burger.hide-desktop-up
+            span
+            span
+            span
         
         //- nav
         nav.navbar.js-nav-wave
