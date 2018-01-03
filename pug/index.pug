@@ -81,14 +81,14 @@ html
       aside.navbar-wrap
 
         //- burger button
-        .burger-button
+        .burger-button.hide-desktop-up
           span
           span
           span
 
         //- 大頭照
         figure.avatar
-          img(src="../contents/img/avatar.jpg", alt="Auguston")
+          img(src="contents/img/avatar.jpg", alt="Auguston")
           figcaption Auguston
         
         //- ga pageviews
@@ -101,28 +101,30 @@ html
             span augustus
         
         //- nav
-        nav.navbar
+        nav.navbar.js-nav-wave
+
           .divider 作品連結
-          a(target="_blank", href="https://github.com/auguston")
-            i.fab.fa-github
-            | github
-          a(target="_blank", href="https://www.i-see.tw/sean-su/")
-            i.fas.fa-globe
-            | website
+          .main-links
+            a(target="_blank", href="https://github.com/auguston")
+              i.fab.fa-github
+              span github
+            a(target="_blank", href="https://www.i-see.tw/sean-su/")
+              i.fas.fa-globe
+              span website
+            a.toggle-share.hide-desktop-up.js-open-social(href="#")
+              i.fas.fa-share-alt-square
+              span share
           
           .divider.js-social-share 社群分享
-          a.line(target="_blank", href="")
-            i.fab.fa-line
-            | line
-          a.facebook(target="_blank", href="")
-            i.fab.fa-facebook-square
-            | facebook
-          a.google(target="_blank", href="")
-            i.fab.fa-google-plus-square
-            | google+
-          a.twitter(target="_blank", href="")
-            .fab.fa-twitter-square
-            | twitter
+          .social-links
+            a.js-line(target="_blank", href="", title="line")
+              i.fab.fa-line
+            a.js-facebook(target="_blank", href="", title="facebook")
+              i.fab.fa-facebook-square
+            a.js-google(target="_blank", href="", title="google+")
+              i.fab.fa-google-plus-square
+            a.js-twitter(target="_blank", href="", title="twitter")
+              .fab.fa-twitter-square
       
       //- content
       main.contents-wrap

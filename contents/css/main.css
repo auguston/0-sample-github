@@ -6,9 +6,13 @@ body { background: #f5fbff; letter-spacing: 1.5px; font-family: 'Noto Sans TC', 
 
 img { display: block; max-width: 100%; height: auto; }
 
+.hide-desktop-up { display: none !important; }
+
+@media screen and (max-width: 768px) { .hide-desktop-up { display: block !important; } }
+
 .navbar-wrap { position: fixed; top: 0; left: 0; bottom: 0; z-index: 998; width: 250px; height: 100%; overflow-y: auto; background: -webkit-gradient(linear, left bottom, left top, from(#1e3c72), to(#2a5298)); background: -webkit-linear-gradient(bottom, #1e3c72 0%, #2a5298 100%); background: -o-linear-gradient(bottom, #1e3c72 0%, #2a5298 100%); background: linear-gradient(to top, #1e3c72 0%, #2a5298 100%); color: #ffffff; color: rgba(255, 255, 255, 0.87); }
 
-.navbar-wrap .burger-button { display: none; position: fixed; right: 260px; }
+.navbar-wrap .burger-button { position: fixed; right: 260px; }
 
 .navbar-wrap .burger-button span { display: block; margin: 6px 0; margin: 0.375rem 0; width: 42px; width: 2.625rem; height: 3px; background: #2a5298; }
 
@@ -32,14 +36,17 @@ img { display: block; max-width: 100%; height: auto; }
 
 .navbar-wrap .navbar a:hover { background: #000000; background: rgba(0, 0, 0, 0.2); color: #FFF; }
 
-.navbar-wrap .navbar .svg-inline--fa { margin-right: 16px; margin-right: 1rem; font-size: 20px; font-size: 1.25rem; }
+.navbar-wrap .navbar .main-links .svg-inline--fa { margin-right: 16px; margin-right: 1rem; font-size: 20px; font-size: 1.25rem; }
+
+.navbar-wrap .navbar .social-links .svg-inline--fa { font-size: 32px; font-size: 2rem; }
+
+.navbar-wrap .navbar .social-links { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: 0 3.2px; padding: 0 .2rem; }
+
+.navbar-wrap .navbar .social-links a { padding: 12px; padding: 0.75rem; border-radius: 0.375rem; }
 
 .navbar-wrap .navbar .divider { padding: 16px; padding: 1rem; font-size: 12px; font-size: 0.75rem; font-weight: 200; color: #ffffff; color: rgba(255, 255, 255, 0.54); }
 
 .navbar-wrap .navbar .divider ~ .divider { margin-top: 32px; margin-top: 2rem; }
-
-@media screen and (max-width: 768px) { .navbar-wrap { left: initial; right: 0; }
-  .navbar-wrap .burger-button { display: block; } }
 
 .contents-wrap { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; margin-left: 250px; padding: 16px; padding: 1rem; }
 

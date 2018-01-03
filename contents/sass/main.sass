@@ -19,6 +19,13 @@ img
   max-width: 100%
   height: auto
 
+.hide-desktop-up
+  display: none !important
++m-768
+  .hide-desktop-up
+    display: block !important
+
+
 // 左側導覽列
 .navbar-wrap
   position: fixed
@@ -33,7 +40,6 @@ img
   color: rgba(#FFF, .87)
 
   .burger-button
-    display: none
     position: fixed
     right: 260px
     span
@@ -87,9 +93,21 @@ img
       &:hover
         background: rgba(#000, .2)
         color: #FFF
-    .svg-inline--fa
+
+    .main-links .svg-inline--fa
       margin-right: 1rem
       font-size: $px20
+    .social-links .svg-inline--fa
+      font-size: $px32
+    
+    .social-links
+      display: flex
+      justify-content: space-around
+      padding: 0 .2rem
+      a
+        padding: $px12
+        border-radius: $px6
+
     .divider
       padding: 1rem
       font-size: $px12
@@ -100,11 +118,6 @@ img
 
 +m-768
   .navbar-wrap
-    left: initial
-    right: 0
-
-    .burger-button
-      display: block
 
 // 內容
 .contents-wrap

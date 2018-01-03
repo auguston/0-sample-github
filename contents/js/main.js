@@ -6,16 +6,16 @@ const s_public = {
       delay: 400
     };
     Waves.init(config);
-    Waves.attach('.navbar a', ['waves-light']);
+    Waves.attach('.js-nav-wave a', ['waves-light']);
   },
   socialLink() {
     if($('.js-social-share').length > 0) {
       const href = $('[rel="canonical"]').attr('href'),
             title = document.title;
-      $('.line').attr('href', `https://line.naver.jp/R/msg/text/?${ title }%0D%0A${ href }`);
-      $('.facebook').attr('href', `https://www.facebook.com/share.php?u=${ href }`);
-      $('.google').attr('href', `https://plus.google.com/share?url=${ href }`);
-      $('.twitter').attr('href', `https://twitter.com/share?text=${ title }&url=${ href }`);
+      $('.js-line').attr('href', `https://line.naver.jp/R/msg/text/?${ title }%0D%0A${ href }`);
+      $('.js-facebook').attr('href', `https://www.facebook.com/share.php?u=${ href }`);
+      $('.js-google').attr('href', `https://plus.google.com/share?url=${ href }`);
+      $('.js-twitter').attr('href', `https://twitter.com/share?text=${ title }&url=${ href }`);
     }
   },
   gaViews() {
