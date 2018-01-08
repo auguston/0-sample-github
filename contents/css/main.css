@@ -29,9 +29,9 @@ img { display: block; max-width: 100%; height: auto; }
 
 .navbar-wrap .avatar img { margin: 0 auto; max-width: 120px; border: 1px solid #1e3c72; border-radius: 50%; }
 
-.navbar-wrap .avatar figcaption { line-height: 2; text-align: center; font-size: 32px; font-size: 2rem; font-weight: 200; }
+.navbar-wrap .avatar figcaption { line-height: 2; text-align: center; font-size: 32px; font-size: 2rem; }
 
-.navbar-wrap .analytics { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 16px 0; padding: 1rem 0; font-weight: 200; }
+.navbar-wrap .analytics { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 16px 0; padding: 1rem 0; }
 
 .navbar-wrap .analytics .views, .navbar-wrap .analytics .email { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -53,7 +53,7 @@ img { display: block; max-width: 100%; height: auto; }
 
 .navbar-wrap .navbar .social-links a { padding: 12px; padding: 0.75rem; border-radius: 0.375rem; }
 
-.navbar-wrap .navbar .divider { padding: 16px; padding: 1rem; font-size: 12px; font-size: 0.75rem; font-weight: 200; color: #ffffff; color: rgba(255, 255, 255, 0.54); }
+.navbar-wrap .navbar .divider { padding: 16px; padding: 1rem; font-size: 12px; font-size: 0.75rem; color: #ffffff; color: rgba(255, 255, 255, 0.54); }
 
 .navbar-wrap .navbar .divider ~ .divider { margin-top: 32px; margin-top: 2rem; }
 
@@ -88,7 +88,13 @@ img { display: block; max-width: 100%; height: auto; }
 
 .contents-wrap h3 { margin: 20px 0 8px; margin: 1.25rem 0 .5rem; line-height: 2; font-size: 20px; font-size: 1.25rem; }
 
-.contents-wrap p { margin-bottom: 8px; margin-bottom: .5rem; line-height: 1.5; font-weight: 200; font-size: 16px; font-size: 1rem; }
+.contents-wrap p { margin-bottom: 8px; margin-bottom: .5rem; line-height: 1.5; font-size: 16px; font-size: 1rem; }
+
+.contents-wrap a { text-decoration: none; color: #2196f3; }
+
+.contents-wrap a:hover { text-decoration: underline; }
+
+.contents-wrap .img { padding: 16px 32px; padding: 1rem 2rem; }
 
 @media screen and (max-width: 768px) { .contents-wrap { position: relative; margin-left: 0; }
   .contents-wrap h1, .contents-wrap h2, .contents-wrap h3, .contents-wrap p { padding: 0 1rem; line-height: 1.25; }
