@@ -96,6 +96,8 @@ img { display: block; max-width: 100%; height: auto; }
 
 .contents-wrap .img { padding: 16px 32px; padding: 1rem 2rem; }
 
+.contents-wrap .fb-comments { margin-top: 48px; margin-top: 3rem; padding: 32px; padding: 2rem; width: 100%; background: #414345; }
+
 @media screen and (max-width: 768px) { .contents-wrap { position: relative; margin-left: 0; }
   .contents-wrap h1, .contents-wrap h2, .contents-wrap h3, .contents-wrap p { padding: 0 1rem; line-height: 1.25; }
   .contents-wrap .iframe-wrap, .contents-wrap .code-wrap { padding: 1rem 0; } }
@@ -130,7 +132,7 @@ pre .atv { color: #ffa0a0; }
 
 pre .dec { color: #98fb98; }
 
-.footer-wrap { margin-top: 32px; margin-top: 2rem; margin-bottom: 16px; margin-bottom: 1rem; }
+.footer-wrap { padding-top: 32px; padding-top: 2rem; padding-bottom: 16px; padding-bottom: 1rem; background: #414345; color: #ffffff; color: rgba(255, 255, 255, 0.87); }
 
 .footer-wrap h6 { text-align: center; font-size: 12px; font-size: 0.75rem; }
 
