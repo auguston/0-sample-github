@@ -78,7 +78,7 @@ img
   .btn
     appearance: none
     display: inline-block
-    margin: .5rem 0
+    margin: .5rem
     padding: .75rem 2rem
     background: linear-gradient(to top, #1e3c72 0%,#2a5298 100%)
     border: 1px solid $main
@@ -88,6 +88,12 @@ img
     +hover
       text-decoration: none
       color: #FFF
+
+  .btn-wrap
+    .btn:first-of-type
+      margin-left: 0
+    .btn:last-of-type
+      margin-right: 0
 
 +m-768
   .contents-wrap
