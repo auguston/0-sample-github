@@ -143,7 +143,7 @@ gulp.task('es6', () => {
 gulp.task('watch', () => {
 	gulp.watch(src_Pug, ['template']);
 	gulp.watch(src_sass, ['styles']);
-	gulp.watch('./contents/js/*.js', ['es6']);
+	gulp.watch(src_es6js, ['es6']);
 	// gulp.watch(src_mark, ['markdown']);
 });
 
